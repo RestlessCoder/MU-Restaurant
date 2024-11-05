@@ -281,6 +281,41 @@ function initSwiper() {
             clickable: true,
         }
     });
+
+        
+    swiperGallery = new Swiper('.gallery-shop-carousel', {
+        slidesPerView: 1,
+        centeredSlides: true,
+        spaceBetween: 20,
+        loop: false,
+        speed: 1800,
+        centeredSlidesBounds: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            1800: {
+                slidesPerView: 3
+            },
+            1200: {
+                slidesPerView: 3
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 0
+            },
+            550: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            }
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+            clickable: true,
+        }
+    });
 }
 
  
